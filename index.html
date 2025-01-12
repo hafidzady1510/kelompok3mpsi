@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Pengelolaan Tugas Akhir UTDI</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- JavaScript -->
+  <script>
+    function login(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Perform login logic here (you can add validation, etc.)
+      // Then redirect to the home page
+      window.location.href = "home.html";
+    }
+  </script>
+</head>
+<body>
+  <div class="login-container">
+    <div class="left-panel">
+      <div class="text-logo-container">
+        <h1 class="main-heading">
+          PENGELOLAAN<br>
+          TUGAS AKHIR<br>
+          UTDI
+        </h1>
+        <div class="logo-container">
+          <img src="images/logo.png" alt="Logo UTDI" class="logo">
+        </div>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <h2 class="login-heading">Login</h2>
+      <form action="javascript:void(0);" method="POST" class="login-form" onsubmit="login(event)">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        
+        <a href="#" class="forgot-password">Forget Password?</a>
+
+        <button type="submit" class="login-button">LOGIN</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

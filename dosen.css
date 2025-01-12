@@ -1,0 +1,197 @@
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling */
+body {
+  background: url('images/polygon.png') no-repeat center center fixed;
+  background-size: cover;
+  padding: 30px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh; /* Pastikan konten mengisi seluruh layar */
+  justify-content: space-between; /* Untuk memastikan footer selalu di bawah */
+  margin-bottom: 30px;
+}
+
+/* Main content container for desktop */
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 40px;
+  flex-grow: 1; /* Pastikan konten utama mengisi ruang yang tersisa */
+}
+
+/* General black outer box for sections */
+.daftar-dosen, .daftar-mahasiswa, .undangan-sidang {
+  position: relative;
+  background-color: #2c387e; /* Black outer box */
+  padding: 20px; /* Padding to ensure the content has space */
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  width: 100%; /* Ensure full width for responsiveness */
+}
+
+/* White inner box inside black outer box */
+.inner-content {
+  background-color: #ffffff; /* White inner content */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Slight shadow */
+}
+
+/* Adjusting for desktop proportions */
+.daftar-dosen {
+  flex: 2; /* Take more space for the daftar dosen section */
+}
+
+.right-section {
+  flex: 1; /* Take less space for the right-side section */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c387e;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container .logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  position: relative;
+  position: relative; /* Make sure the parent element has relative positioning */
+}
+
+.user-name {
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.user-icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.icon-scroll img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Dropdown Menu */
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 60px; /* Position it below the user icon */
+  right: 0;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none; /* Hidden by default */
+  z-index: 9999; /* Ensure dropdown is on top of other elements */
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.dropdown-menu ul li {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Jarak antara ikon dan teks */
+}
+
+/* Atur ukuran semua ikon dalam dropdown menu */
+.dropdown-menu ul li img {
+  width: 24px; /* Ukuran lebar ikon seragam */
+  height: 24px; /* Tinggi ikon sama dengan lebar */
+  margin-right: 8px; /* Jarak antara ikon dan teks */
+  object-fit: cover; /* Menjaga proporsi gambar */
+  vertical-align: middle; /* Sejajarkan ikon dengan teks secara vertikal */
+}
+
+.dropdown-menu ul li:hover {
+  background-color: #f5f5f5;
+}
+
+ul li a {
+  text-decoration: none; /* Hilangkan garis bawah pada tautan */
+  color: #333; /* Warna teks tautan */
+  font-size: 16px;
+  display: flex;
+  align-items: center; /* Pusatkan konten dalam tautan */
+  gap: 10px; /* Jarak antara ikon dan teks */
+}
+
+ul li a:hover {
+  color: #0066FF; /* Ubah warna saat hover */
+}
+
+ul li img {
+  width: 20px; /* Ukuran ikon */
+  height: 20px;
+}
+
+/* Main content styling */
+h2 {
+  font-size: 24px;
+  color: #ffffff; /* White title color */
+  text-align: left; /* Align to left */
+  margin-bottom: 20px; /* Space between title and white content */
+  background-color: transparent; /* No separate background for title */
+}
+
+/* List item styling inside inner content */
+.inner-content ul {
+  margin-top: 10px;
+  list-style-type: disc; /* This adds the default bullet point */
+  padding-left: 20px; /* Space to the left of the bullet points */
+}
+
+ul li {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+
+/* Footer styling */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #2c387e;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-top: 30px; /* Menambahkan jarak antara footer dan elemen di atasnya */
+}

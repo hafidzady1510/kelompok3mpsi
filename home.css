@@ -1,0 +1,336 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and layout */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('images/polygon.png') no-repeat center center fixed;
+  background-size: cover;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #293059;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container .logo,
+.user-icon img {
+  width: 50px;  /* Set the same width for both */
+  height: 50px; /* Set the same height for both */
+  border-radius: 50%; /* Keep the user icon round */
+}
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c387e;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo-container .logo,
+.user-icon img {
+  width: 50px;  /* Set the same width for both */
+  height: 50px; /* Set the same height for both */
+  border-radius: 50%; /* Keep the user icon round */
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.user-icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.icon-scroll {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.icon-scroll img {
+  width: 20px;
+  height: 20px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 60px; /* Position it below the user icon */
+  right: 0;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none; /* Hidden by default */
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.dropdown-menu ul li {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Jarak antara ikon dan teks */
+}
+
+/* Atur ukuran semua ikon dalam dropdown menu */
+.dropdown-menu ul li img {
+  width: 24px; /* Ukuran lebar ikon seragam */
+  height: 24px; /* Tinggi ikon sama dengan lebar */
+  margin-right: 8px; /* Jarak antara ikon dan teks */
+  object-fit: cover; /* Menjaga proporsi gambar */
+  vertical-align: middle; /* Sejajarkan ikon dengan teks secara vertikal */
+}
+
+.dropdown-menu ul li:hover {
+  background-color: #f5f5f5;
+}
+
+ul {
+  list-style: none; /* Hilangkan bullet point */
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0; /* Jarak antar item */
+  display: flex;
+  align-items: center; /* Pusatkan secara vertikal */
+}
+
+ul li a {
+  text-decoration: none; /* Hilangkan garis bawah pada tautan */
+  color: #333; /* Warna teks tautan */
+  font-size: 16px;
+  display: flex;
+  align-items: center; /* Pusatkan konten dalam tautan */
+  gap: 10px; /* Jarak antara ikon dan teks */
+}
+
+ul li a:hover {
+  color: #0066FF; /* Ubah warna saat hover */
+}
+
+ul li img {
+  width: 20px; /* Ukuran ikon */
+  height: 20px;
+}
+
+
+/* Sidebar */
+.sidebar {
+  width: 35%;
+  padding: 0; /* Hilangkan padding */
+  border-radius: 10px;
+  box-shadow: none; /* Hilangkan bayangan jika ada */
+  background-color: transparent; /* Pastikan transparan */
+}
+
+/* Tugas Akhir */
+.final-assignment {
+  background-color: #2c387e; /* Warna baru */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+  margin-bottom: 30px;
+}
+
+.final-assignment h3 {
+  text-align: center;
+  font-size: 20px;
+  color: white; /* Warna teks putih untuk judul */
+  margin-bottom: 15px;
+}
+
+/* Kotak putih di dalam kotak hitam */
+.final-assignment .content-box {
+  background-color: rgba(255, 255, 255, 0.9); /* Putih transparan */
+  padding: 15px;
+  border-radius: 10px; /* Sudut membulat */
+  color: black; /* Warna teks hitam */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+.final-assignment .content-box p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.final-assignment .content-box strong {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Kalender */
+.calendar {
+  background-color: #2c387e; /* Warna baru */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.calendar h3 {
+  margin-bottom: 10px;
+  text-align: center; /* Tengah pada kotak kalender */
+  font-size: 20px;
+  color: black; /* Warna teks hitam untuk judul */
+}
+
+.calendar-content img {
+  width: 100%; /* Kalender memenuhi lebar kotak */
+  border-radius: 10px; /* Sudut membulat pada gambar kalender */
+  margin-top: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+/* Course List */
+.course-list {
+  width: 60%;
+  background-color: #2c387e; /* Warna baru */
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-list h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 kolom: kanan dan kiri */
+  gap: 30px; /* Jarak antar kotak lebih lebar */
+}
+
+.course-card {
+  background-color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  height: 180px; /* Tinggi lebih besar */
+  padding: 10px;
+}
+
+.course-card .color-box {
+  background-color: inherit;
+  height: 50%; /* Proporsi kotak warna lebih tinggi */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.course-card .white-box {
+  background-color: white;
+  height: 50%; /* Proporsi kotak putih lebih tinggi */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.course-card .white-box span {
+  color: black;
+  font-weight: bold;
+  font-size: 18px; /* Ukuran font lebih besar */
+  text-align: center;
+}
+
+/* Penyesuaian untuk tata letak di layar besar */
+@media (min-width: 1024px) {
+  .courses {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+  }
+}
+
+/* Responsif untuk layar lebih kecil */
+@media (max-width: 768px) {
+  .courses {
+    grid-template-columns: 1fr; /* 1 kolom di layar kecil */
+  }
+}
+
+/* Colors for each course card */
+.green { background-color: #319B31; }
+.blue { background-color: #0066FF; }
+.red { background-color: #CB1C1C; }
+.purple { background-color: #AE00FF; }
+.pink { background-color: #FF00EE; }
+.yellow { background-color: #EEFF00; }
+
+/* Make the text inside the colored boxes black */
+.course-card .color-box span {
+  color: black;
+  font-weight: bold;
+}
+
+.course-list h2, 
+.final-assignment h3, 
+.calendar h3 {
+  color: white; /* Warna teks putih */
+}
+
+/* Pastikan margin bottom tetap konsisten antara setiap elemen */
+.final-assignment {
+  margin-left: -40px; /* Jarak ke bawah yang konsisten */
+}
+
+.calendar {
+  margin-left: -40px; /* Jarak ke bawah yang konsisten */
+}
+
+.course-list {
+  margin-right: 10px; /* Jarak ke bawah yang konsisten */
+}
+
+/* Footer styling */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #2c387e;
+  color: white;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
