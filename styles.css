@@ -125,3 +125,55 @@ body {
 .login-button:hover {
   background-color: #279827;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.content {
+  margin: 20px 0;
+}
+
+.column {
+  float: left;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* Media query untuk layar lebih lebar (desktop) */
+@media only screen and (min-width: 768px) {
+  .column {
+      width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .column {
+      width: 33.33%;
+  }
+}
+
+.footer {
+  clear: both;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
