@@ -126,54 +126,28 @@ body {
   background-color: #279827;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+.login-container {
+  display: flex;
+  height: 100vh;
 }
 
-.container {
-  width: 100%;
+.left-panel {
+  flex: 1;
+  background: url('images/Polygon.png') no-repeat center center / cover;
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%); /* Left trapezoid shape */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
-  box-sizing: border-box;
+  height: 100%; /* Make sure it takes full height */
 }
 
-.header {
-  background-color: #4CAF50;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-}
-
-.content {
-  margin: 20px 0;
-}
-
-.column {
-  float: left;
-  width: 100%;
-  padding: 15px;
-  box-sizing: border-box;
-}
-
-/* Media query untuk layar lebih lebar (desktop) */
-@media only screen and (min-width: 768px) {
-  .column {
-      width: 50%;
+/* Media query for smaller devices (like mobile phones) */
+@media only screen and (max-width: 768px) {
+  .left-panel {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Make the polygon a rectangle on smaller screens */
+    height: 100vh; /* Ensure it takes full height of viewport */
+    background-size: cover; /* Ensure the background image covers the entire area */
   }
-}
-
-@media only screen and (min-width: 1024px) {
-  .column {
-      width: 33.33%;
-  }
-}
-
-.footer {
-  clear: both;
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  margin-top: 20px;
 }
