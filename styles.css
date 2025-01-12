@@ -126,28 +126,30 @@ body {
   background-color: #279827;
 }
 
+/* Main container for the login page */
 .login-container {
   display: flex;
-  height: 100vh;
+  height: 100vh; /* Set height to full viewport */
 }
 
 .left-panel {
   flex: 1;
   background: url('images/Polygon.png') no-repeat center center / cover;
-  clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%); /* Left trapezoid shape */
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  height: 100%; /* Make sure it takes full height */
+  height: 100vh; /* Ensure it takes full height */
+  width: 100%; /* Ensure it takes full width */
 }
 
 /* Media query for smaller devices (like mobile phones) */
 @media only screen and (max-width: 768px) {
   .left-panel {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Make the polygon a rectangle on smaller screens */
-    height: 100vh; /* Ensure it takes full height of viewport */
-    background-size: cover; /* Ensure the background image covers the entire area */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Make it rectangular on smaller screens */
+    height: 100vh; /* Ensure full height on small screens */
+    background-size: cover; /* Ensure background covers the entire area */
   }
 }
