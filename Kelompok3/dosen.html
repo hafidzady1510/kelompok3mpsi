@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Dosen dan Mahasiswa</title>
+  <link rel="stylesheet" href="dosen.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo-container">
+      <img src="images/logo-kecil.png" alt="Logo" class="logo">
+    </div>
+    <div class="user-info">
+      <span class="user-name">YUDHA RIAN ATMAJA</span>
+      <div class="user-icon">
+        <img src="images/user-icon.png" alt="User Icon">
+      </div>
+      <div class="icon-scroll">
+        <img src="images/icon-scroll.png" alt="Scroll">
+      </div>
+      <div class="dropdown-menu">
+        <ul>
+          <li>
+            <a href="home.html">
+              <img src="images/home-icon.png" alt="Beranda"> Beranda
+            </a>
+          </li>
+          <li>
+            <a href="menu.html">
+              <img src="images/profil-icon.png" alt="Profil Saya"> Profil Saya
+            </a>
+          </li>
+          <li>
+            <a href="dosen.html">
+              <img src="images/dosen-icon.png" alt="Profil Dosen"> Profil Dosen
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/preferensi-icon.png" alt="Preferensi"> Preferensi
+            </a>
+          </li>
+          <li>
+            <a href="index.html">
+              <img src="images/keluar-icon.png" alt="Keluar"> Keluar
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="main-content">
+    <div class="content-container">
+      <!-- Left Section: Daftar Dosen -->
+      <section class="daftar-dosen">
+        <h2>Daftar Nama Dosen</h2>
+        <div class="inner-content">
+        <ul>
+          <li>Robby Cokro Buwono, S.Kom., M.Kom.</li>
+          <li>Dr.Asyahri Hadi Nasyuha, S.Kom., M.Kom.</li>
+          <li>Nafisatul Lutfi, S.S., M.A.</li>
+          <li>Deborah Kurniawati, S.Kom., M.Cs.</li>
+          <li>Basuki Heri Winarno, S.Pd., M.Kom.</li>
+          <li>Dr.L.N. Harnaningrum, S.Si, M.T.</li>
+          <li>Ir.M. Guntara, M.T.</li>
+          <li>Dr.Widyastuti Andriyani, S.Kom., M.Kom.</li>
+          <li>Badiyanto, S.Kom., M.Kom.</li>
+          <li>Endang Wahyuningsih, S.Kom., M.Cs.</li>
+          <li>Femi Dwi Astuti, S.Kom., M.Cs.</li>
+        </ul>
+        </div>
+      </section>
+      <div class="right-section">
+        <!-- Daftar Mahasiswa -->
+        <section class="daftar-mahasiswa">
+          <h2>Daftar Nama Mahasiswa</h2>
+          <div class="inner-content">
+          <ul>
+            <li>Priscolio Vijay Amsikan</li>
+            <li>Herjuno Triyanto</li>
+            <li>Muh. Hafidz Ady Khoiri</li>
+            <li>Yudha Rian Atmaja</li>
+            <li>Ziddan Abdul Hakiem</li>
+          </ul>
+          </div>
+        </section>
+        <section class="undangan-sidang">
+          <h2>Daftar Undangan Sidang</h2>
+          <div class="inner-content">
+          <ul>
+            <li><a href="#">Undangan Sidang Yudha Rian Atmaja.pdf</a></li>
+          </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2025 Universitas Teknologi Digital Indonesia. All Rights Reserved.</p>
+  </footer>
+  <script>
+    document.querySelector('.icon-scroll').addEventListener('click', function() {
+        const dropdown = document.querySelector('.dropdown-menu');
+        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    });
+    document.addEventListener('click', function(event) {
+        const userInfo = document.querySelector('.user-info');
+        if (!userInfo.contains(event.target)) {
+            document.querySelector('.dropdown-menu').style.display = 'none';
+        }
+    });
+  </script>
+</body>
+</html>
